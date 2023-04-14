@@ -3,40 +3,33 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from "../assets/images/logo2.png"
 
 function Header() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid className='header'>
         {/* <div className="ml-10"> */}
-            <Navbar.Brand href="#home">Enlighten Hotels</Navbar.Brand>
+            <Navbar.Brand href="#home">
+              <img src={logo} className="brandLogo"/>
+            </Navbar.Brand>
         {/* </div> */}
         <div className='nav_items'>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">Our Hotels</Nav.Link>
-                <Nav.Link href="#link">Offers</Nav.Link>
-                <Nav.Link href="#link">About Us</Nav.Link>
+            <Nav className="me-auto d-flex align-items-center">
+                <Nav.Link href="#home" className='raise'>Home</Nav.Link>
+                <Nav.Link href="#link" className='raise'>Our Hotels</Nav.Link>
+                <Nav.Link href="#link" className='raise'>Offers</Nav.Link>
+                <Nav.Link href="#aboutus" className='raise'>About Us</Nav.Link>
                 <Nav.Link href="#home">
-                    <button
+                  <button
                     className="btn btn-outline-primary"
                     role="button"
-                    >Parter With Us
-                    </button>
+                    >
+                      Parter With Us
+                  </button>
                  </Nav.Link>
-                {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                    Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                    Separated link
-                </NavDropdown.Item>
-                </NavDropdown> */}
             </Nav>
             </Navbar.Collapse>
         </div>
