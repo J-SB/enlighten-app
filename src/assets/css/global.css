@@ -174,6 +174,14 @@ html {
     margin-bottom: 500px; */
   }
 
+  .maininfo_aboutme > div:nth-child(1) {
+    text-align: left;
+  }
+
+  .maininfo_aboutme > div:nth-child(2) {
+    text-align: right;
+  }
+
   .maininfo_aboutme > div > div{
     flex: 0.5;
     flex-wrap: wrap;

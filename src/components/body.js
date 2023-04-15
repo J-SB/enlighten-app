@@ -90,7 +90,7 @@ function Body() {
                     A warm welcome to Enlighten Experiences!
                     Serene Experiences is a sales & marketing and public relations company, based in New Delhi India,
                     specializing in customized representation for hotel companies, resorts and wellness/destination spa
-                    resorts. With more than 20 years of rich experience in hospitality, We are committed
+                    resorts. <br/>With more than 20 years of rich experience in hospitality, We are committed
                     to offering a high level of personalized service in increasing awareness of our hotels within our carefully
                     maintained Indian client databases and with tour operators, travel agents, MICE agents, corporate &
                     business travel, and high net worth individuals (HNI’s) and through the media including print, electronic
@@ -98,6 +98,7 @@ function Body() {
                 </div>
             </div>
         </div>
+
         <div className="d-flex align-items-center">
             <div>
                 <div className="heading">
@@ -107,7 +108,7 @@ function Body() {
                     We provide complete 360 degrees Sales & Marketing & Public Relations solutions for the New Delhi NCR
                     region (including Gurgaon & Noida) for Leisure, Corporate & MICE segments. We actively cover the
                     other metro cities of Mumbai, Bangalore, Chennai, Hyderabad, Ahmadabad, Jaipur, Lucknow, Indore &
-                    Kolkata, depending on the individual hotel’s requirements.
+                    Kolkata, depending on the individual hotel’s requirements.<br/>
                     Take advantage of our huge experience in domestic sales & marketing and extensive network of
                     contacts. Build up your presence in the International key source markets of UK, USA, France, Germany,
                     Russia, Switzerland, Austria, Middle East, Far East etc. Our services for international sales & marketing
