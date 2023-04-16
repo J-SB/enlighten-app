@@ -8,7 +8,7 @@ import Hotel from "./hotel";
 const slides = [
   {
     title: "Batra Hotels and Residences",
-    image_urls: ["https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"],
+    image_urls: ["https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ", "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"],
     subtitle: "Srinar Jammu & Kashmir",
     description: "Adventure is never far away",
     image:
@@ -56,8 +56,8 @@ const slides = [
 function HotelList() {
    const [showModal, setShowModal] = useState(false)
   return (
-    <div className="slides">
-      <div className="heading mt-5 mb-4" id="aboutus">
+    <div className="slides" id="ourhotels">
+      <div className="heading mt-5 mb-5" id="aboutus">
           <h1 className="headingbg">Explore</h1>
           <h2>Our Hotels</h2>
       </div>
@@ -88,13 +88,14 @@ function HotelList() {
                         setShowModal(idx)
                     }}>Learn More</Button>
                 </div>
-                {showModal===idx?(
+                {showModal === idx ? (
                     <div className="m-2">
                     <Hotel
                       name={slide.title}
                       image_urls={slide.image_urls}
                       link={slide.link}
                       description={slide.description}
+                      hideModal={() => setShowModal(false)}
                     />
                     </div>
                   ) : ""}

@@ -1,9 +1,11 @@
 import { Button, Modal, Carousel } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 function Hotel(props){
     const {
      name,
-     image_urls,
+     image_urls = [],
      link,
      description
     } = props
@@ -13,32 +15,40 @@ function Hotel(props){
     // const description = "Adventure is never far away"
 
     return (
-        <div>
-            <Modal size="xl">
-                <Modal.Header>
-                    <h4>{name}</h4>
-                </Modal.Header>
-                <Modal.Body>
-                <Carousel fade>
-                {image_urls.map((url, idx)=> {
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={url}
-                        alt="First slide"
-                        />
-                    </Carousel.Item>
-                })}
-                </Carousel>
-                <div className="row mt-10">
-                    {description}
-                </div>
-                <div className="row mt-10">
-                    Visit : {link} For more details
-                </div>
+        <div className="hoteldetails">
+            <Modal size="lg" show={true} onHide={() => props.hideModal()}>
+                <Modal.Body className="">
+                    <div className="heading" id="aboutus">
+                        <h1 className="headingbg">Hotel</h1>
+                        <h2>{name}</h2>
+                        <hr/>
+                    </div>
+                    <div>
+                        <Carousel fade className="carousel-hotel">
+                        {image_urls.map((url, idx)=> (
+                            <Carousel.Item>
+                                <img
+                                    src={url}
+                                    alt="First slide"
+                                    className="hotelimage"
+                                />
+                            </Carousel.Item>
+                        ))}
+                        </Carousel>
+                    </div>
+                    <div>
+                        <div className="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div className="">
+                            <a href={link}>
+                                <Button className="btn-primary"><FontAwesomeIcon icon={faArrowUpRightFromSquare} />&nbsp;&nbsp;Visit</Button>
+                            </a>
+                                &nbsp;&nbsp;For more details
+                        </div>
+                    </div>
                 </Modal.Body>
             </Modal>
-
         </div>
     )
 }

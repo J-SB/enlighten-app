@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'
 import logo from "../assets/images/logo2.png"
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -16,9 +17,13 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto d-flex align-items-center">
-                <Nav.Link href="#home" className='raise'>Home</Nav.Link>
-                <Nav.Link href="#link" className='raise'>Our Hotels</Nav.Link>
-                <Nav.Link href="#link" className='raise'>Offers</Nav.Link>
+                <Nav.Link className='raise'>
+                  <Link to="/">Home</Link>
+                </Nav.Link>
+                <Nav.Link href="#ourhotels" className='raise'>Our Hotels</Nav.Link>
+                <Nav.Link className='raise'>
+                  <Link to="offers">Offers</Link>
+                </Nav.Link>
                 <Nav.Link href="#aboutus" className='raise'>About Us</Nav.Link>
                 <Nav.Link href="#home">
                   <button

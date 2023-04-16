@@ -386,10 +386,15 @@ html {
     width: 20vw;
     height: 55vh;
     max-height: fit-content;
-    margin: 60px 40px;
+    margin: 70px 40px;
     display: flex;
     flex-direction: column;
     background-color: #FAF7F3;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mainCard:hover {
+    transform: scale(1.05);
   }
 
   .card {
@@ -537,4 +542,77 @@ html {
     opacity: 1;
     transform: translate3d(0%, -30%, 100px);
   }
-  
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-body > div:nth-child(1) {
+    margin: 20px 0px;
+  }
+
+  .modal-body > div:nth-child(2) {
+    flex: 0.3;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f6f3;
+  }
+
+  .carousel-hotel {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .modal-body > div:nth-child(3) {
+    flex: 0.7;
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #fcfbfa;
+  }
+
+  .modal-body > div:nth-child(3) > div:nth-child(1){
+    font-family: serif;
+    font-size: large;
+    font-weight: 600;
+  }
+
+  .modal-body > div:nth-child(3) > div:nth-child(2){
+    font-family: serif;
+    font-size: large;
+    margin-top: 20px;
+  }
+
+  .modal-body > div:nth-child(3) > div:nth-child(2) > a > button{
+    border-radius: 3px;
+    background-color: #2374F1;
+  }
+
+  .hotelimage {
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .offers > div:nth-child(2) {
+    background-color: #fcfbfa;
+    padding: 20px 10px;
+  }
+
+  .offers > div:nth-child(2) > div {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .offers > div:nth-child(2) > div:hover{
+    transform: scale(1.1);
+  }
+
+  .nav-link > a{
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .nav-link > a:hover {
+    color: #f8a162;
+  }
