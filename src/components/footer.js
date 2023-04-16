@@ -1,6 +1,6 @@
 import React from "react"
-import logo from "../assets/images/logo.jpeg"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInsta } from '@fortawesome/free-solid-svg-icons'
 function Footer() {
   return (
     <footer class="main-footer">
@@ -11,13 +11,14 @@ function Footer() {
                         <div class="logo-widget footer-widget">
                             <div className="fs-3">Enlightment, Hotels and Resorts</div>
                             <div class="text">
-                                <p>Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure.</p>
+                                <p>We provide complete 360 degrees Sales & Marketing & Public Relations solutions for the New Delhi NCR
+region (including Gurgaon & Noida) for Leisure, Corporate & MICE segments. We actively cover the
+other metro cities of Mumbai, Bangalore, Chennai, Hyderabad, Ahmadabad, Jaipur, Lucknow, Indore &
+Kolkata, depending on the individual hotel’s requirements.</p>
                             </div>
                             <ul class="footer-social">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="https://www.facebook.com/Enlightenhotelsandresorts?mibextid=ZbWKwL"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a></li>
+                                <li><a href="https://instagram.com/enlightenhotels2018?igshid=ZDdkNTZiNTM="><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
                             </ul>
                         </div>
                     </div>
@@ -25,11 +26,11 @@ function Footer() {
                         <div class="service-widget footer-widget">
                             <div class="footer-title">Services</div>
                             <ul class="list">
-                                <li><a href="#">Water Surve</a></li>
-                                <li><a href="#">Education for all</a></li>
-                                <li><a href="#">Food Serving</a></li>
-                                <li><a href="#">Animal Saves</a></li>
-                                <li><a href="#">Help Orphan</a></li>
+                                <li><a href="#aboutus">Who we are?</a></li>
+                                <li><a href="#aboutus">Why work with us?</a></li>
+                                <li><a href="#">Partner with us</a></li>
+                                <li><a href="#">Carrers</a></li>
+                                <li><a href="#"></a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,13 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Navbar from 'react-bootstrap/Navbar'
 import logo from "../assets/images/logo2.png"
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="" expand="lg">
       <Container fluid className='header'>
         {/* <div className="ml-10"> */}
             <Navbar.Brand href="#home">
