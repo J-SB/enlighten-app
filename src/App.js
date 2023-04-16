@@ -29,6 +29,7 @@ import './App.css';
 import Header from "./components/navbar"
 import Body from "./components/body"
 import Footer from './components/footer';
+import Hotel from "./components/hotel"
 
 class App extends React.Component {
 
