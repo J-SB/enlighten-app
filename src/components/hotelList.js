@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import Carousel from 'react-grid-carousel'
 import { Button } from "react-bootstrap";
+import Hotel from "./hotel";
 
 const slides = [
   {
     title: "Batra Hotels and Residences",
+    image_urls: ["https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"],
     subtitle: "Srinar Jammu & Kashmir",
     description: "Adventure is never far away",
     image:
@@ -52,8 +54,7 @@ const slides = [
 
 
 function HotelList() {
-  
-
+   const [showModal, setShowModal] = useState(false)
   return (
     <div className="slides">
       <div className="heading mt-5 mb-4" id="aboutus">
@@ -62,8 +63,8 @@ function HotelList() {
       </div>
       <div>
         <Carousel cols={3} rows={1} loop autoplay={true}>
-        {slides.map(slide => (
-          <Carousel.Item className="carouselItem">
+        {slides.map((slide, idx) => {
+          return <Carousel.Item className="carouselItem">
             <div className="mainCard">
               <div class="card">
                 <div class="wrapper">
@@ -83,12 +84,24 @@ function HotelList() {
                   {slide.description}
                 </div>
                 <div>
-                  <Button className="btn-primary">Learn More</Button>
+                  <Button className="btn-primary" onClick={(e) => {
+                        setShowModal(idx)
+                    }}>Learn More</Button>
                 </div>
+                {showModal===idx?(
+                    <div className="m-2">
+                    <Hotel
+                      name={slide.title}
+                      image_urls={slide.image_urls}
+                      link={slide.link}
+                      description={slide.description}
+                    />
+                    </div>
+                  ) : ""}
               </div>
             </div>
           </Carousel.Item>
-        ))}
+        })}
         </Carousel>
       </div>
     </div>
