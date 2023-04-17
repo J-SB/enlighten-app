@@ -92,10 +92,10 @@ function HotelList() {
             <div className="mainCard">
               <div class="card">
                 <div class="wrapper">
-                  <img src={slide.image} class="cover-image" style={{width: '10rem', height: '10rem'}}/>
+                  <img src={slide.image} class="cover-image" style={{width: '10vw', height: '20vh'}}/>
                 </div>
-                <img src={slide.image} class="title" style={{width: '10rem'}}/>
-                <img src={slide.image} class="character" style={{width: '12rem'}}/>
+                <img src={slide.image} class="title" style={{width: '10vw', height: "15vh"}}/>
+                <img src={slide.image} class="character" style={{width: '15vw', height: "12vh"}}/>
               </div>
               <div className="cardBody">
                 <div>
