@@ -3,8 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'
 import logo from "../assets/images/logo2.png"
 import { Link } from "react-router-dom";
+import Form from './partner';
+import { useState } from 'react';
 
 function Header() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <Navbar bg="" expand="lg">
       <Container fluid className='header'>
@@ -29,10 +32,12 @@ function Header() {
                   <button
                     className="btn btn-outline-primary"
                     role="button"
+                    onClick={() => setShowModal(true)}
                     >
                       Parter With Us
                   </button>
                  </Nav.Link>
+                 <Form showModal={showModal} onHide={() => setShowModal(false)}/>
             </Nav>
             </Navbar.Collapse>
         </div>
