@@ -8,46 +8,70 @@ import Hotel from "./hotel";
 const slides = [
   {
     title: "Batra Hotels and Residences",
-    image_urls: ["https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ", "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"],
+    image_urls: ["https://www.batrahotelsandresidences.com/assets/images/portfolio/img17.jpg",
+                 "https://www.batrahotelsandresidences.com/assets/images/portfolio/img19.jpg",
+                 "https://www.batrahotelsandresidences.com/assets/images/portfolio/img20.jpg",
+                 "https://www.batrahotelsandresidences.com/assets/images/portfolio/img27.jpg"],
     subtitle: "Srinar Jammu & Kashmir",
     description: "Adventure is never far away",
     image:
-      "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+      "https://www.batrahotelsandresidences.com/assets/images/portfolio/img17.jpg"
   },
   {
-    title: "Chamonix",
-    subtitle: "France",
+    title: "Lakshmi Cottage",
+    image_urls: ["https://pix6.agoda.net/hotelImages/37286515/0/f8c20a8491dea1bf8a225b568f0fe62d.jpg?s=600x450"],
+    subtitle: "Manali, Himachal Pradesh",
     description: "Let your dreams come true",
     image:
-      "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+    "https://pix6.agoda.net/hotelImages/37286515/0/f8c20a8491dea1bf8a225b568f0fe62d.jpg?s=600x450"
   },
   {
-    title: "Mimisa Rocks",
-    subtitle: "Australia",
+    title: "Tarra Cottage",
+    image_urls: ["https://cf.bstatic.com/xdata/images/hotel/max1024x768/308812921.jpg?k=30d5ffe753c5b0b2b750a44ff277255c209dcf57bf9a52c0362e74b5e00ada93&o=&hp=1"],
+    subtitle: "Manali, Himachal Pradesh",
     description: "A piece of heaven",
     image:
-      "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/308812921.jpg?k=30d5ffe753c5b0b2b750a44ff277255c209dcf57bf9a52c0362e74b5e00ada93&o=&hp=1"
   },
   {
-    title: "Five",
-    subtitle: "Australia",
+    title: "Park Prime",
+    image_urls: ["https://cf.bstatic.com/xdata/images/hotel/max1024x768/338738298.jpg?k=a34b32299df91b963c6923d72cbfdb81f8426145475f6ea50b06f9b2b04e63a1&o=&hp=1"],
+    subtitle: "Jaipur, Rajasthan",
     description: "A piece of heaven",
     image:
-      "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+    "https://cf.bstatic.com/xdata/images/hotel/max1024x768/338738298.jpg?k=a34b32299df91b963c6923d72cbfdb81f8426145475f6ea50b06f9b2b04e63a1&o=&hp=1"
   },
   {
-    title: "Mimisa Rocks",
-    subtitle: "Australia",
+    title: "Park Prime",
+    image_urls: ["https://dynamic-media-cdn.tripadvisor.com/media/photo-s/01/b2/1e/4a/chrome-hotel.jpg?w=300&h=-1&s=1"],
+    subtitle: "Kolkata, West Bangal",
     description: "A piece of heaven",
     image:
-      "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/01/b2/1e/4a/chrome-hotel.jpg?w=300&h=-1&s=1"
   },
   {
-    title: "Five",
-    subtitle: "Australia",
+    title: "Park Prime",
+    image_urls: ["https://ak-d.tripcdn.com/images/0224d120008jlzzi25B3A_Z_960_660_R5_D.jpg_.webp"],
+    subtitle: "Ranchi, Jharkhand",
     description: "A piece of heaven",
     image:
-      "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+    "https://ak-d.tripcdn.com/images/0224d120008jlzzi25B3A_Z_960_660_R5_D.jpg_.webp"
+  },
+  {
+    title: "Park Prime",
+    image_urls: ["https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/44/17/4417576_v6.jpeg"],
+    subtitle: "Goa",
+    description: "A piece of heaven",
+    image:
+    "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_225,q_auto,w_225/itemimages/44/17/4417576_v6.jpeg"
+  },
+  {
+    title: "Park Prime",
+    image_urls: ["	https://pix8.agoda.net/hotelImages/864/864113/864113_15071711370032499632.jpg?ca=4&ce=1&s=1024x768"],
+    subtitle: "New Digha",
+    description: "A piece of heaven",
+    image:
+      "	https://pix8.agoda.net/hotelImages/864/864113/864113_15071711370032499632.jpg?ca=4&ce=1&s=1024x768"
   }
 ];
 
