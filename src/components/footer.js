@@ -1,6 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInsta } from '@fortawesome/free-solid-svg-icons'
+import {Link} from "react-router-dom"
 function Footer() {
   return (
     <footer class="main-footer">
@@ -9,7 +10,7 @@ function Footer() {
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                         <div class="logo-widget footer-widget">
-                            <div className="fs-3">Enlightment, Hotels and Resorts</div>
+                            <div className="fs-3">Enlighten, Hotels and Resorts</div>
                             <div class="text">
                                 <p>We provide complete 360 degrees Sales & Marketing & Public Relations solutions for the New Delhi NCR
 region (including Gurgaon & Noida) for Leisure, Corporate & MICE segments. We actively cover the
@@ -29,7 +30,7 @@ Kolkata, depending on the individual hotel’s requirements.</p>
                                 <li><a href="#aboutus">Who we are?</a></li>
                                 <li><a href="#aboutus">Why work with us?</a></li>
                                 <li><a href="#">Partner with us</a></li>
-                                <li><a href="#">Carrers</a></li>
+                                <li><a><Link to="careers">Carrers</Link></a></li>
                                 <li><a href="#"></a></li>
                             </ul>
                         </div>

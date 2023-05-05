@@ -31,6 +31,7 @@ import Body from "./components/body"
 import Footer from './components/footer';
 import Hotel from "./components/hotel"
 import Offers from './components/offers';
+import Careers from './components/careers'
 import { Route, Routes } from 'react-router-dom';
 
 class App extends React.Component {
@@ -44,10 +45,13 @@ class App extends React.Component {
           <Route path="/" element={ <div>
             <Body />
           </div> } />
-          <Route path="offers" element={ <div>
-            <Offers/>
-          </div> } />
+          <Route path="offers" element={
+            <div> 
+            <Offers/></div> } />
           <Route path="contact" element={ <div></div> } />
+          <Route path="careers" element={ <div>
+            <Careers/>
+          </div> } />
         </Routes>
 
         <Footer />
