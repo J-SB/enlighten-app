@@ -93,29 +93,29 @@ const hotelPackages = [
 const Offers = () => {
   const [showFullText, setShowFullText] = useState(false);
 
-  const toggleFullText = () => {
-    setShowFullText(!showFullText);
+  const toggleFullText = (id) => {
+    setShowFullText(showFullText === id ? false : id);
   };
 
+  const getText = (description = "") => {
+    return description.length > 100 ? description.slice(0,100) + "..." : description;
+  }
+
   return (
-    <Container className="hotel-packages-container" fluid>
+    <div className="row offers">
       {hotelPackages.map((hotelPackage) => (
-        <div key={hotelPackage.id} className="hotel-package-card">
-          <Card>
-            <Card.Img variant="top" src={hotelPackage.image} />
-            <Card.Body>
-              <Card.Title>{hotelPackage.title}</Card.Title>
-              <Card.Text className={showFullText ? 'show-text' : 'hide-text'}>
-                {hotelPackage.description}
-              </Card.Text>
-              <Button variant="primary" onClick={toggleFullText}>
-                {showFullText ? 'Read Less' : 'Read More'}
-              </Button>
-            </Card.Body>
-          </Card>
+        <div key={hotelPackage.id} className="col-md-2 offersCard">
+          <div>
+            <img src={hotelPackage.image}/>
+          </div>
+          <div>{hotelPackage.title}</div>
+          <div>{showFullText === hotelPackage.id ? hotelPackage.description : getText(hotelPackage.description)}</div>
+          <div>
+            <button className='btn btn-primary' onClick={() => toggleFullText(hotelPackage.id)}>Show More</button>
+          </div>
         </div>
       ))}
-    </Container>
+    </div>
   );
 };
 

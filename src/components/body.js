@@ -33,7 +33,7 @@ function Body() {
         <div className="mt-3">
         <div className="mainBody">
             <Carousel fade>
-            <Carousel.Item>
+            <Carousel.Item className="carouselItemMain">
                 <img
                 className="d-block w-100"
                 src={banner1}
@@ -126,24 +126,28 @@ function Body() {
             </motion.div>
         </Container>
         <HotelList/>
-        <div className="container">
-        <Carousel className="testimonial-carousel" interval={50}>
-        <Carousel.Item className="testimonial-carousel-item">
-            <p>"This product is amazing! I've never seen anything like it."</p>
-            <h4>John Doe</h4>
-            <p>Client at XYZ Company</p>
-        </Carousel.Item>
-        <Carousel.Item className="testimonial-carousel-item">
-            <div>
-            <p>"I was blown away by the quality of the service. Highly recommend!"</p>
-            <div>
-                <h5>Jane Smith</h5>
-                <p>Client at ABC Company</p>
-            </div>
-            </div>
-        </Carousel.Item>
-        {/* Add more Carousel.Item components for additional testimonials/reviews */}
-        </Carousel>
+        <div className="container-testimonial">
+            <Carousel className="testimonial-carousel" interval={1000}>
+            <Carousel.Item className="testimonial-carousel-item">
+                <h3 className="m-4">What Our Client Says</h3>
+                <p className="m-4">"This product is amazing! I've never seen anything like it."</p>
+                <h4 className="m-4">John Doe</h4>
+                <div>
+                    <img src={banner1}/>
+                </div>
+                <p className="m-4">Client at XYZ Company</p>
+            </Carousel.Item>
+            <Carousel.Item className="testimonial-carousel-item">
+                <h3 className="m-4">What Our Client Says</h3>
+                <p className="m-4">"This product is amazing! I've never seen anything like it."</p>
+                <h4 className="m-4">John Doe</h4>
+                <div>
+                    <img src={banner2}/>
+                </div>
+                <p className="m-4">Client at XYZ Company</p>
+            </Carousel.Item>
+            {/* Add more Carousel.Item components for additional testimonials/reviews */}
+            </Carousel>
         </div>
 
 
