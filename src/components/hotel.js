@@ -7,7 +7,8 @@ function Hotel(props){
      name,
      image_urls = [],
      link,
-     description
+     description,
+     content
     } = props
     // const name = "Batra Hotels and Residences"
     // const image_urls= ["https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"]
@@ -38,7 +39,7 @@ function Hotel(props){
                     </div>
                     <div>
                         <div className="">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {content}
                         </div>
                         <div className="">
                             <a href={link}>

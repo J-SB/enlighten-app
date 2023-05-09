@@ -11,6 +11,7 @@ function Form(props){
             Feel Free to Contact Us !!
         </Modal.Header>
         <Modal.Body>
+        <form id="partner_form" action="https://formspree.io/f/xwkjygae" method="POST">
             <div class="partner-form row">
                     <div className="col-md-6 d-flex flex-column">
                         <label><strong>Hotel Name</strong></label>
@@ -31,11 +32,12 @@ function Form(props){
                     <div className="col-md-12 d-flex flex-column mt-3">
                         <label><strong>Message</strong></label>
                         <textarea name="message" placeholder="Message"></textarea>
-                    </div>        
+                    </div> 
             </div>
+            </form>
         </Modal.Body>
         <Modal.Footer>
-            <button className="primary-btn" type="submit" form="partner_form" value="Submit" onClick={() => onHide()}>Submit</button>
+            <button className="primary-btn" type="submit" form="partner_form" value="Submit">Submit</button>
         </Modal.Footer>
      </Modal>
     )
