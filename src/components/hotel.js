@@ -1,4 +1,4 @@
-import { Button, Modal, Carousel } from "react-bootstrap";
+import { Button, Modal, Carousel, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
@@ -24,19 +24,20 @@ function Hotel(props){
                         <h2>{name}</h2>
                         <hr/>
                     </div>
-                    <div>
-                        <Carousel fade className="carousel-hotel">
+                    <Container>
+                        <Carousel fade className="carousel-hotel" style={{"width": "100%", "margin": "0"}}>
                         {image_urls.map((url, idx)=> (
-                            <Carousel.Item>
+                            <Carousel.Item style={{"width": "100%"}}>
                                 <img
                                     src={url}
                                     alt="First slide"
                                     className="hotelimage"
+                                    style={{"width": "100%", "height": "40vh"}}
                                 />
                             </Carousel.Item>
                         ))}
                         </Carousel>
-                    </div>
+                    </Container>
                     <div>
                         <div className="">
                             {content}

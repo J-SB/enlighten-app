@@ -62,8 +62,8 @@ function Body() {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>Welcome to Enlighten Hotels and Resorts</h3>
-                <p>Lighten to Enlighten</p>
+                <h3 style={{"fontSize": "3vw"}}>Welcome to Enlighten Hotels and Resorts</h3>
+                <p style={{"fontSize":"2vw"}}>Lighten to Enlighten</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -73,8 +73,8 @@ function Body() {
                 alt="Second slide"
                 />
                 <Carousel.Caption>
-                <h3>Welcome to Enlighten Hotels and Resorts</h3>
-                <p>Lighten to Enlighten</p>
+                <h3 style={{"fontSize": "3vw"}}>Welcome to Enlighten Hotels and Resorts</h3>
+                <p style={{"fontSize": "2vw"}}>Lighten to Enlighten</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -84,8 +84,8 @@ function Body() {
                 alt="Third slide"
                 />
                 <Carousel.Caption>
-                <h3>Welcome to Enlighten Hotels and Resorts</h3>
-                <p>Lighten to Enlighten</p>
+                <h3 style={{"fontSize": "3vw"}}>Welcome to Enlighten Hotels and Resorts</h3>
+                <p style={{"fontSize": "2vw"}}>Lighten to Enlighten</p>
                 </Carousel.Caption>
             </Carousel.Item>
             </Carousel>
@@ -116,7 +116,7 @@ function Body() {
                             <h2 style={{fontSize: "2vw"}}>About Us</h2>
                         </div>
                         <div className="m-4"></div>
-                        <div style={{fontSize: "1vw", textAlign: "left"}} className="about-info">
+                        <div style={{fontSize: "1.125vw", textAlign: "left"}} className="about-info">
                             A warm welcome to Enlighten Experiences!
                             Serene Experiences is a sales & marketing and public relations company, based in New Delhi India,
                             specializing in customized representation for hotel companies, resorts and wellness/destination spa
@@ -139,7 +139,7 @@ function Body() {
                                 <h2 style={{fontSize: "2vw"}}>Why Us?</h2>
                             </div>
                             <div className="m-4"></div>
-                            <div style={{fontSize: "1vw", textAlign: "left"}} className="about-info">
+                            <div style={{fontSize: "1.125vw", textAlign: "left"}} className="about-info">
                             We provide complete 360 degrees Sales & Marketing & Public Relations solutions for the New Delhi NCR
                         region (including Gurgaon & Noida) for Leisure, Corporate & MICE segments. We actively cover the
                         other metro cities of Mumbai, Bangalore, Chennai, Hyderabad, Ahmadabad, Jaipur, Lucknow, Indore &

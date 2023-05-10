@@ -93,7 +93,7 @@ function HotelList() {
           <h1 className="headingbg">Explore</h1>
           <h2>Our Hotels</h2>
       </div>
-      <div className="hotelCarousal">
+      <div className="hotelCarousal" style={{align: "center"}}>
         <Carousel cols={3} rows={1} loop autoplay={true} style={{align: "center"}}
           responsive={{
             xs: { cols: 1, rows: 1 },
@@ -113,19 +113,19 @@ function HotelList() {
                 <img src={slide.image} class="character" style={{width: '15vw', height: "12vh"}}/>
               </div>
               <div className="cardBody">
-                <div style={{fontSize: "1.25vw"}}>
+                <div style={{fontSize: "15px"}}>
                   {slide.title}
                 </div>
                 <div>
-                  <FontAwesomeIcon icon={faLocationDot} style={{color: "#326dd2", fontSize: "1vw"}} />  {slide.subtitle}
+                  <FontAwesomeIcon icon={faLocationDot} style={{color: "#326dd2"}} />  {slide.subtitle}
                 </div>
-                <div style={{fontSize: "1vw"}}>
+                <div style={{fontSize: "12px"}}>
                   {slide.description}
                 </div>
                 <div>
                   <Button className="btn-primary" onClick={(e) => {
                         setShowModal(idx)
-                    }}>Learn More</Button>
+                    }} style={{marginBottom: 20}}>Learn More</Button>
                 </div>
                 {showModal === idx ? (
                     <div className="m-2">
