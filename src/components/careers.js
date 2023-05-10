@@ -2,8 +2,10 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { useEffect, useState } from "react"
 import { get } from "lodash";
+import ApplyNow from './apply_now';
 
 const Careers = () => {
+  const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState([]);
   const getCareers =  async () => {
         try{
@@ -31,7 +33,8 @@ const Careers = () => {
             <div className="maininfo_aboutme box mt-10">
               <h2>{jobProfile[0]}</h2>
               <p>{jobProfile[1]}</p>
-              <Button href="#" target="_blank" style={{alignSelf: "right"}}>Apply Now</Button>
+              <Button  style={{alignSelf: "right"}} onClick={() => setShowModal(true)}>Apply Now</Button>
+              <ApplyNow showModal={showModal} onHide={() => setShowModal(false)}/>
             </div>
           </Col>
         </Row>) : "")
